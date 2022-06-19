@@ -3,7 +3,13 @@ Pipeline for creating and analysing scientific networks. The first phase is down
 
 
 # Installation
-Import py files in your project
+Import following py files in your project and install libraries in [requirements.txt](https://github.com/bilal-dsu/IndSchResArt/blob/main/requirements.txt)
+
+[Extract.py](https://github.com/bilal-dsu/IndSchResArt/blob/main/Extract.py)
+[Transform.py](https://github.com/bilal-dsu/IndSchResArt/blob/main/Transform.py)
+[Load.py](https://github.com/bilal-dsu/IndSchResArt/blob/main/Load.py)
+[Index.py](https://github.com/bilal-dsu/IndSchResArt/blob/main/Index.py)
+
 
 # Usage
 See [IndSchResArt.ipynb](https://github.com/bilal-dsu/IndSchResArt/blob/main/IndSchResArt.ipynb)
