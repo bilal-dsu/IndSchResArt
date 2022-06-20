@@ -153,7 +153,7 @@ def generateQualitativeResults(PublicationInfoCSV, PublicationRankCSV, metaData,
     RankDF = DF.groupby('DOI').first().merge(RankDF, left_index=True, right_index=True)
     RankDF.index.names = ['DOI']
      
-    RankDF.sort_values(['Year','Score']).groupby('Year').head(5).to_csv(PublicationRankCSV, index=True)
+    RankDF.sort_values(['Year','Score'], ascending=[True, False]).groupby('Year').head(5).to_csv(PublicationRankCSV, index=True)
     
     RankDF = pd.read_csv(PublicationRankCSV)
     RankDF.index = RankDF.index + 1
